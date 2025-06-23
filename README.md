@@ -69,6 +69,11 @@ LIMIT 10;
 - **Carrier Performance Comparison**: Visuals comparing delay rates by airline.
 - **Interactive Filters**: Dashboard slicers for year, month, airport, carrier, and delay type for customized exploration.
 
+## 💡 Dashboard Interactivity Demo
+
+The GIF below shows how users can interact with filters, explore trends, and drill into delay causes.
+
+![AirlineDelaysProject](https://github.com/brittanyfleury/AirlineDelaysProject/blob/main/Airline%20Delay%20Dashboard%20Demo.gif)
 
 ## 📚 What I Learned
 
