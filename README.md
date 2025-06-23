@@ -46,7 +46,10 @@ This project analyzes 10 years of U.S. flight delay data (2013–2023) to uncove
   - **Disruption rates by month and season**
   - **Top delay reasons per airport/season**
 
-- Sample Query:
+### Sample SQL Query
+
+This query returns the top 10 airports with the most delayed arrivals (15+ minutes):
+
 ```sql
 SELECT 
   airport,
@@ -55,5 +58,30 @@ SELECT
 FROM delays_cleaned
 GROUP BY airport, airport_name
 ORDER BY total_delayed_flights_15min_plus DESC
-LIMIT 1;
+LIMIT 10;
+```
 
+## 📈 Dashboard Highlights
+
+- **Top 5 Delay-Prone Airports**: Bar chart showing which airports have the highest percentage of delayed arrivals.
+- **Delay Trends by Month and Season**: Line chart visuals to highlight patterns over time.
+- **Disruption Causes Breakdown**: Pie chart detailing delays caused by weather, NAS, security, and late aircraft.
+- **Carrier Performance Comparison**: Visuals comparing delay rates by airline.
+- **Interactive Filters**: Dashboard slicers for year, month, airport, carrier, and delay type for customized exploration.
+
+
+## 📚 What I Learned
+
+- Practiced data cleaning and wrangling in Python using Pandas library
+- Strengthened ability to write advanced SQL queries to analyze real-world business problems  
+- Applied time-series feature engineering to support seasonal and trend analysis  
+- Developed an end-to-end data pipeline from raw CSVs to an interactive BI dashboard  
+- Gained practical experience presenting insights visually to support decision-making  
+
+---
+
+## 🚀 Future Improvements
+
+- Build a machine learning model to predict flight delays based on historical patterns  
+- Improve dashboard responsiveness for mobile viewing and embedded use
+- Create another dashboard using Tableau
